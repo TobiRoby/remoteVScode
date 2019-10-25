@@ -1,0 +1,19 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details or
+// https://aka.ms/vscode-dev-containers/definitions for sample configurations.
+{
+	"name": "vs_project_name",
+	"context": "..",
+	"dockerComposeFile": "../docker-compose.yml",
+	"service": "dev",
+	"runServices": ["dev"],
+	"workspaceFolder": "/home/root/project/",
+	"extensions": [
+		"ms-python.python",
+		"njpwerner.autodocstring",
+		"streetsidesoftware.code-spell-checker",
+		"donjayamanne.githistory",
+		"eamodio.gitlens",
+		"ms-pyright.pyright"
+	],
+	"postCreateCommand": "mkdir -p /root/.ssh && cp -r /home/root/.ssh-localhost/* /root/.ssh && chmod 700 /root/.ssh && chmod 600 /root/.ssh/* && eval $(ssh-agent) && ssh-add /root/.ssh/id_rsa"
+}

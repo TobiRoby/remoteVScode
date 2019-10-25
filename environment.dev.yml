@@ -1,0 +1,7 @@
+name: showcase
+channels:
+  - defaults
+dependencies:
+  - jupyter
+  - pylint
+  - black
