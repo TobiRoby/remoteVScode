@@ -1,4 +1,4 @@
-name: showcase
+name: quickstart
 channels:
   - defaults
 dependencies:
