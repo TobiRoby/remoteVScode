@@ -13,7 +13,7 @@ services:
     command: /bin/bash
     tty: true
 
-  prod:#
+  prod:
     build: 
       context: .
       target: prod
