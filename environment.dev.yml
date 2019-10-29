@@ -1,7 +1,9 @@
 name: quickstart
 channels:
   - defaults
+  - conda-forge
 dependencies:
   - jupyter
   - pylint
   - black
+  - dvc
