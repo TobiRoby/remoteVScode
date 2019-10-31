@@ -6,4 +6,3 @@ dependencies:
   - jupyter
   - pylint
   - black
-  - dvc
