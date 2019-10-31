@@ -4,4 +4,4 @@ repos:
       - id: black
         name: black
         language: system
-        entry: "bash -c 'source activate quickstart && python -m black'"
+        entry: "bash -c 'source activate quickstart && black'"

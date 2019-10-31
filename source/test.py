@@ -16,8 +16,6 @@ def test_if_df(data: pd.DataFrame) -> bool:
     return (isinstance(df, pd.DataFrame))
 
 
-df = pd.DataFrame([1, 2, 3], columns=["col1"]).assign(
-    long="looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong"
-)
+df = pd.DataFrame([1, 2, 3], columns=["col1"]).assign(long="looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong")
 
 assert test_if_df(df)
