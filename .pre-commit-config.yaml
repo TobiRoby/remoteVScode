@@ -5,3 +5,5 @@ repos:
         name: black
         language: system
         entry: "bash -c 'source activate quickstart && black'"
+        require_serial: true
+        types: [python]
