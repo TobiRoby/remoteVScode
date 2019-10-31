@@ -4,6 +4,6 @@ repos:
       - id: black
         name: black
         language: system
-        entry: black
+        entry: python -m black
         require_serial: true
         types: [python]

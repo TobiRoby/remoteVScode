@@ -37,6 +37,9 @@ COPY environment.dev.yml .
 RUN conda-env update -f environment.dev.yml && \
     rm -f environment.dev.yml
 
+# TODO find better way to allow pre-commit hooks for black
+RUN conda install -y black -c conda-forge
+
 # PROD
 FROM base as prod
 COPY . /
