@@ -4,6 +4,4 @@ repos:
       - id: black
         name: black
         language: system
-        entry: python -m black
-        require_serial: true
-        types: [python]
+        entry: "bash -c 'source activate quickstart && python -m black'"

@@ -13,7 +13,7 @@ def test_if_df(data: pd.DataFrame) -> bool:
         bool -- Returns bool if passed data is data
     """
 
-    return isinstance(df, pd.DataFrame)
+    return (isinstance(df, pd.DataFrame))
 
 
 df = pd.DataFrame([1, 2, 3], columns=["col1"]).assign(
