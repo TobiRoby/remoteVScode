@@ -9,7 +9,7 @@ services:
     volumes:
       - .:/home/root/project/
       - quickstart-extension:/home/root/.vscode-server
-    #  - ~/.ssh:/home/root/.ssh-localhost:ro
+      - ~/.ssh:/home/root/.ssh-localhost:ro
     command: /bin/bash
     tty: true
 
