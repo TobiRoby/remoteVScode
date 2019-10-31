@@ -7,3 +7,4 @@ dependencies:
   - black
   - pylama
   - mypy
+  - pre-commit
